@@ -1,8 +1,9 @@
-using TupleStructs
-using Base.Test
+"""
+TestTupleStructs is necessary as a module because we define new types and want to be able to include this file multiple times without generating redefinition of constant errors.
 
-# write your own tests here
-@test 1 == 1
+These tests make a test file test.jld in order to ensure that the resulting types are able to be stored in JLD format.
+
+"""
 module TestTupleStructs
 using Base.Test
 using TupleStructs
